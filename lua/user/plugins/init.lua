@@ -3,24 +3,13 @@
 --
 require "user.plugins.lualine"
 --
--- Disable autopairs
-lvim.builtin.autopairs.active = false
+-- Enable autopairs
+lvim.builtin.autopairs.active = true
 
 --
 -- Additional plugins
 --
 lvim.plugins = {
-  --
-  -- Motion: Hop
-  --
-  {
-    "phaazon/hop.nvim",
-    branch = "v2",
-    event = "BufRead",
-    config = function()
-      require("user.plugins.hop").config()
-    end,
-  },
   --
   -- Diagnostics
   --
@@ -196,7 +185,7 @@ lvim.plugins = {
     version = 'v0.0.7',
     config = function()
       require('github-theme').setup({
-        theme_style = "dimmed",
+        theme_style = "dark",
         function_style = "italic",
         sidebars = { "qf", "vista_kind", "terminal", "packer" },
       })
@@ -204,5 +193,8 @@ lvim.plugins = {
   },
   {
     'wakatime/vim-wakatime'
+  },
+  {
+    "f-person/git-blame.nvim"
   },
 }

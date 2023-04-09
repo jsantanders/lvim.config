@@ -50,6 +50,3 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 -- vim.keymap.set("n", "<F6>", ":ExecVsh<cr>", { noremap = true, silent = true })
 -- Close buffers with name "No name"
 -- vim.keymap.set("n", "<F7>", [[:bdel! "No name"<cr>]], { noremap = true, silent = true })
-
--- Remove LunarVim keymaps
-lvim.keys.visual_mode = {}
