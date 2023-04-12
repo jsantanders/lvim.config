@@ -12,9 +12,9 @@ lvim.format_on_save = {
 }
 
 --lvim.colorscheme = "nordic"
-lvim.colorscheme = "tokyonight"
+--lvim.colorscheme = "tokyonight"
 --lvim.colorscheme = "github"
---lvim.colorscheme = "catppuccin-mocha"
+lvim.colorscheme = "catppuccin-mocha"
 -- Custom property for colorblind mode
 -- See ./lua/user/commands/autocommands.lua
 -- and ./lua/user/plugins/tokyonight.lua

@@ -192,9 +192,15 @@ lvim.plugins = {
     end
   },
   {
+    "catppuccin/nvim", name = "catppuccin"
+  },
+  {
     'wakatime/vim-wakatime'
   },
   {
     "f-person/git-blame.nvim"
+  },
+  {
+    "fedepujol/move.nvim"
   },
 }

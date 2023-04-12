@@ -45,6 +45,16 @@ vim.keymap.set("n", "D", '"dD', { noremap = true, silent = true })
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 
+-- Move selected line / block of text in visual mode
+local opts = { noremap = true, silent = true }
+-- Normal-mode commands
+vim.keymap.set('n', '<C-j>', ':MoveLine(1)<CR>', opts)
+vim.keymap.set('n', '<C-k>', ':MoveLine(-1)<CR>', opts)
+
+-- Visual-mode commands
+vim.keymap.set('v', '<C-j>', ':MoveBlock(1)<CR>', opts)
+vim.keymap.set('v', '<C-k>', ':MoveBlock(-1)<CR>', opts)
+
 -- -- See lua/user/commands/init.lua
 -- vim.keymap.set("n", "<F5>", ":ExecSh<cr>", { noremap = true, silent = true })
 -- vim.keymap.set("n", "<F6>", ":ExecVsh<cr>", { noremap = true, silent = true })
